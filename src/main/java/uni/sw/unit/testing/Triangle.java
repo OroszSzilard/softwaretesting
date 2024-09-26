@@ -4,7 +4,7 @@ public class Triangle {
     private int a, b, c;
 
     public Triangle (int a, int b, int c){
-        if ( ((a + b) > c ) && ((b + c) > a )){
+        if ( ((a + b) > c ) && ((b + c) > a ) && ((a+c)> b)){
             this.a = a;
             this.b = b;
             this.c = c;    
