@@ -15,4 +15,10 @@ public class TriangleTest {
         //assertFalse(triangle.isEquilateral());
         //assertFalse(triangle.isRightAngeled());
     }
+    
+    @Test
+    public void testIsocalesTriangle(){
+        Triangle triangle = new Triangle(3, 3, 5);
+        assertTrue(triangle.isIsosceles());
+    }
 }
