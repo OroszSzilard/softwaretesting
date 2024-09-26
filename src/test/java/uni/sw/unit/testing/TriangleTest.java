@@ -12,13 +12,21 @@ public class TriangleTest {
 
         assertTrue(triangle instanceof Triangle);
         assertFalse(triangle.isIsosceles());
-        //assertFalse(triangle.isEquilateral());
+        assertFalse(triangle.isEquilateral());
         //assertFalse(triangle.isRightAngeled());
     }
-    
+
     @Test
     public void testIsocalesTriangle(){
         Triangle triangle = new Triangle(3, 3, 5);
         assertTrue(triangle.isIsosceles());
+    }
+
+    @Test
+    public void testEquilateralTriangle(){
+        Triangle triangle = new Triangle(5, 5, 5);
+
+        assertTrue(triangle.isIsosceles());
+        assertTrue(triangle.isEquilateral());
     }
 }
